@@ -265,6 +265,7 @@ async function loadLazy(doc) {
   sampleRUM('lazy');
   sampleRUM.observe(main.querySelectorAll('div[data-block-name]'));
   sampleRUM.observe(main.querySelectorAll('picture > img'));
+  import('../tools/sidekick/aem-genai-variations.js');
 
   // Mark customer as having viewed the page once
   localStorage.setItem('franklin-visitor-returning', true);
